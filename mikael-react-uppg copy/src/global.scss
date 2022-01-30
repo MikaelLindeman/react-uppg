@@ -1,0 +1,29 @@
+ $mainColor: #000625;
+
+ $myColor:#5D91F5;
+
+ .blueWord{
+     color:$myColor ;
+ }
+
+ .bigText {
+     color: white;
+     font-family: 'Poppins', sans-serif;;
+ }
+
+ .mediumText {
+     color: white;
+ }
+
+ .smallText {
+     color: white;
+ }
+
+ $width: 768px;
+
+ @mixin mobile {
+     @media (max-width: #{$width}){
+         @content
+     }
+     
+ }

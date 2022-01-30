@@ -1,0 +1,101 @@
+@import "../../global.scss";
+
+.containerC {
+    background-color: rgb(255, 255, 255);
+
+    
+    
+}
+.contact {
+    font-size: 30px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+}
+
+.wrapperContact{
+    display: flex;
+    padding-bottom: 255px;
+
+    @include mobile {
+        flex-direction: column;
+        
+    }
+    
+
+    .leftContact {
+        flex: 1;
+        align-items: center;
+        justify-content: end;
+        padding-left: 100px;
+           
+        @include mobile {
+           margin-left: -120px;
+           padding-left: 0px;
+        }
+        }
+    }
+
+    .rightContact {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+
+        form{
+            width: 70%;
+            height: 80%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+
+            @include mobile {
+                width: 90%;
+                height: 50%;
+            }
+
+            input{
+                width: 300px;
+                height: 30px;
+                font-size: 14px;
+                background-color: rgb(231, 231, 231);
+                border: 1px black solid;                                  
+            }
+
+            textarea{
+                width: 300px;
+                height: 200px;
+                font-size: 14px;
+                display: flex;
+                background-color: rgb(231, 231, 231);
+                border: 1px black solid; 
+            }
+
+            button{
+                width: 150px;
+                height: 30px;
+                color: white;
+                background-color: $myColor;
+                border: none;
+                border-radius: 8px;
+                font-weight: 500;
+                cursor: pointer;
+                border-radius: 84px;
+            
+
+            &:hover {
+                font-weight: 100;
+                color: rgb(230, 227, 255);
+            }
+            }
+        }
+    }
+
+    .icons {
+        color: darkblue;
+    }
+// }
+    

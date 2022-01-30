@@ -1,0 +1,105 @@
+@import "../../global.scss";
+
+.home {
+    background-color: darkgrey;
+    display: flex;
+    background-image: linear-gradient(0deg, rgba(1, 0, 16, 0.86), rgba(1, 0, 16, 0.86)), 
+     linear-gradient(180deg, #000625 29.17%, rgba(0, 25, 154, 0) 100%);
+
+    @include mobile {
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    .leftH{
+        flex: 0.5;
+        overflow: hidden;
+
+        .imgContainer{
+            width: 500px;
+            height: 500px;
+            background-image: linear-gradient(black, rgb(0, 1, 59));
+            border-radius: 50%;
+            border: 15px solid rgb(0, 0, 0);
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            margin-top: 200px;
+            margin-left: 100px;
+
+            @include mobile {
+                margin-top: 20px;
+            }
+
+            img{
+                height: 90%;
+
+                @include mobile {
+                    height: 90%;
+                }
+            }
+        }
+    }
+       
+    .rightH{
+        flex: 0.5;
+        padding-bottom: -200px;
+
+        .wrapper {
+            width: 100%;
+            height: 100%;
+            padding-left: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            
+            @include mobile {
+                padding-left: 15px;
+            }
+            
+            .bigText {
+                font-size: 50px;
+
+                @include mobile {
+                    font-size: 20px;
+                    
+                }
+            }
+            .mediumText {
+                font-weight: 200;
+                font-size: 35px;
+                @include mobile {
+                    font-size: 20px;
+                }
+            }
+            .smallText {
+                font-weight: 100;
+                font-size: 20px;
+                padding-right: 100px;
+                @include mobile {
+                    font-size: 20px;
+                }
+            }
+        }
+        .button {
+            position: absolute;
+            bottom: 30px;
+            background-color: $myColor;
+            color: white;
+            font-size: 20px;
+            text-decoration: none;
+            border-radius: 84px;
+            padding-left: 20px;
+            padding-right: 20px;
+
+            @media (max-width: 768px) {
+                display: none;
+            }
+        }
+    }
+        
+        
+       
+
+}
